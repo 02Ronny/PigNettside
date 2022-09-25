@@ -1,0 +1,19 @@
+.flex-container{
+    background: grey;
+    display: flex;
+    justify-content:space-evenly;
+    padding: 35px;
+}
+
+.block:hover{
+    background: rgb(168, 168, 202);    
+}
+.block{
+    padding: 20px;
+    background: grey;
+    border: none;
+}
+
+
+
+
