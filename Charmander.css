@@ -1,0 +1,149 @@
+body{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    background:url("pikachu-surfing.jpg");
+    background-size:cover;
+
+}
+
+.bakgrunn{
+    display: flex;
+    justify-content:center;
+    
+
+}
+.tekst{
+    position: relative;
+    color:rgb(106, 106, 219);
+    text-shadow: 2px 2px rgb(240, 97, 97);
+}
+
+.info{
+background: white;
+margin-top: 5px;
+margin-left: 5px;
+margin-right: 5px;
+border-radius: 10%;
+display: flex;
+align-items: center;
+justify-content: center;
+word-wrap: break-word;
+border: black 2px solid;
+
+}
+
+
+
+.back{
+    width: 350px;
+    height:500px;
+    border-radius: 5%;
+}
+.charmander{
+    border-radius: 5%;
+   
+    width: 250px;
+    height: 250px;
+    box-shadow: 4px 5px black;
+    border: black 3px solid;
+}
+.flip-card {
+            
+width: 350px;
+height: 500px;
+perspective: 1000px; /* Remove this if you don't want the 3D effect */
+position: relative;
+animation-name: kort;
+animation-duration:2s;
+animation-iteration-count:infinite ;
+animation-timing-function: ease-in-out;
+margin: 100px;
+
+}
+
+@keyframes  kort {
+    0%{
+        top:-50px;
+
+    }
+    50%{
+        top:0px;
+    }
+    100%{
+        top:-50px;
+    }
+}
+
+
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 0.8s;
+transform-style: preserve-3d;
+}
+.border{
+    background: olivedrab;
+    padding:50px;
+    display: flex;
+    top: 200px;
+}
+
+.flip-card:hover .flip-card-inner {
+ transform: rotatey(180deg);
+}
+/* Position the front and back side */
+.flip-card-front, .flip-card-back, .flip-card-back2, .flip-card-back3 {
+position: absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden; /* Safari */
+backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+color: black;
+width: 350px;
+height: 500px;
+}
+
+/* Style the back side */
+.flip-card-back {
+border-radius: 5%;
+border: black 2px solid;
+background: url("firebackground.jpg");
+background-size: cover;
+color: black;
+transform: rotateY(180deg);
+box-shadow: 2px 3px black;
+}
+
+ .flip-card-back2 {
+
+    border-radius: 5%;
+    border: black 2px solid;
+    background: url("grassbackground.jpg");
+    background-size: cover;
+    color: black;
+    transform: rotateY(180deg);
+    box-shadow: 2px 3px black;
+}
+.flip-card-back3 {
+
+        border-radius: 5%;
+        border: black 2px solid;
+        background: url("waterbackground.jpg");
+        background-size: cover;
+        color: black;
+        transform: rotateY(180deg);
+        box-shadow: 2px 3px black;
+} 
+/* .:hover{
+    visibility:collapse; */
